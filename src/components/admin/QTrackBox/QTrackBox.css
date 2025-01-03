@@ -1,0 +1,64 @@
+.q-trackbox-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.q-trackbox-container:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+.q-left-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: end;
+}
+
+.q-trackbox-img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.q-small-text {
+    font-size: small;
+    color: rgb(153, 130, 164)
+}
+
+.x-icon-btn-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.x-icon-btn {
+    background-color: #333333;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.05s linear;
+}
+
+.x-icon-btn:hover {
+    background-color: #1a1a1d;
+    cursor: pointer;
+}
+
+.x-icon {
+    width: 24px;
+}
+
+.q-drag-container {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

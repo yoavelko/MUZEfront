@@ -1,0 +1,227 @@
+.current-track-img {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.current-not-playing {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 194px;
+}
+
+.current-track-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+
+.buffer-container {
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 24px;
+  background-color: #3a1f2c;
+}
+
+.current-track {
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.range-buffer {
+  margin-bottom: 10px;
+}
+
+.player-play-btn {
+  width: 72px;
+  height: 72px;
+  border: 2px solid #333333;
+  background-color: #333333;
+  color: white;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-icon {
+  width: 32px;
+  margin-left: 6px;
+}
+
+.pause-icon {
+  width: 32px;
+}
+
+.player-play-btn:hover {
+  background-color: #A64D79;
+  border-color: #A64D79;
+  cursor: pointer;
+}
+
+.player-btns {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #333333;
+  background-color: #333333;
+  color: white;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-btns:hover {
+  background-color: #A64D79;
+  border-color: #A64D79;
+  cursor: pointer;
+}
+
+.player-btns-icons {
+  width: 24px;
+}
+
+.player-btns-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to top, #1a1a1d 50%, #3a1f2c 50%);
+  margin-bottom: 3vh;
+}
+
+.load-pl-btn-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.load-pl-btn {
+  border: 2px solid #333333;
+  background-color: #333333;
+  width: 56px;
+  height: 56px;
+  color: white;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-pl-btn:hover {
+  background-color: #A64D79;
+  border-color: #A64D79;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*buffer design*/
+
+/* Wrapper for better control */
+input[type="range"] {
+  -webkit-appearance: none;
+  /* Remove default styling for WebKit browsers */
+  appearance: none;
+  /* Remove default styling for others */
+  width: 70%;
+  /* Make it span the container */
+  height: 4px;
+  /* Adjust track height */
+  background: #ccc;
+  /* Track background color */
+  border-radius: 5px;
+  /* Rounded corners for the track */
+  outline: none;
+  /* Remove focus outline */
+  opacity: 0.8;
+  /* Slight transparency */
+  transition: opacity 0.2s ease;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+  /* Fully opaque on hover */
+}
+
+/* Track styling */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  height: 4px;
+  background: transparent;
+  /* Required for IE */
+  border-color: transparent;
+  /* Required for IE */
+  color: transparent;
+  /* Required for IE */
+  cursor: pointer;
+}
+
+/* Thumb styling (the draggable circle) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Remove default styling for WebKit */
+  appearance: none;
+  width: 12px;
+  /* Thumb width */
+  height: 12px;
+  /* Thumb height */
+  background: #A64D79;
+  /* Thumb color */
+  border-radius: 50%;
+  /* Make it circular */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  /* Slight shadow for 3D effect */
+  margin-top: -4px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #A64D79;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #A64D79;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Adjust focus styles */
+input[type="range"]:focus {
+  outline: none;
+  /* Remove default focus outline */
+}
+

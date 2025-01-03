@@ -1,0 +1,74 @@
+.calendar-container {
+    width: 80%;
+    height: 64%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+    padding-bottom: 0;
+}
+
+.specific-date-playlist-container {
+    direction: ltr;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 580px;
+    padding-right: 16px;
+    text-align: end;
+    color: white;
+}
+
+.specific-date-playlist-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.specific-date-playlist-container::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+    border-radius: 5px;
+}
+
+.specific-date-playlist-container::-webkit-scrollbar-thumb:hover {
+    background: #6e6e6e;
+}
+
+.specific-date-playlist-container::-webkit-scrollbar-track {
+    background: #262626;
+    border-radius: 5px;
+}
+
+.specific-date-track {
+    display: flex;
+    justify-content: end;
+    max-width: 580px;
+    font-weight: 400;
+}
+
+.specific-date-track-time {
+    width: 40px;
+}
+
+.specific-date-playlist-header {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.export-pl-btn {
+    width: 120px;
+    height: 32px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: none;
+    background-color: #1a1a1d;
+    color: white;
+    font-weight: 600;
+}
+
+.export-pl-btn:hover {
+    cursor: pointer;
+    color: #8e6378;
+}
+
+.react-calendar__tile {
+    background-color: black;
+}

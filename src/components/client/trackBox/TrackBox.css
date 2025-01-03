@@ -1,0 +1,46 @@
+.track-box-container {
+    display: flex;
+    padding: 4px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    direction: rtl;
+}
+
+.track-box-img {
+    width: 56px;
+    height: 56px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.track-box-img-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.track-box-right {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.album-release-year {
+    width: calc(100vw - 104px);
+    color: rgb(153, 130, 164);
+    font-size: small;
+}
+
+.track-name {
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+    max-width: calc(100vw - 104px);
+}
+
+.album-name {
+    overflow: hidden;
+    max-height: 32px;
+}

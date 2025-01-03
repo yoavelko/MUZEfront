@@ -1,0 +1,89 @@
+#a-track-box-container {
+    display: flex;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: smaller;
+}
+
+#a-track-box-container:hover {
+    background-color: #333333;
+}
+
+.a-track-box-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.a-track-box-img-container {
+    display: flex;
+    align-items: center;
+}
+
+.a-track-box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 54px;
+}
+
+.a-track-time-req {
+    display: flex;
+    color: rgb(153, 130, 164);
+}
+
+.a-track-name {
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+/* checkbox */
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(153, 130, 164);
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+    content: "";
+    background-color: rgb(153, 130, 164);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}

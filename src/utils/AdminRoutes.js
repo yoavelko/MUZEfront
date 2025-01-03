@@ -1,0 +1,13 @@
+export const HOST = "http://localhost:3001/admin";
+export const getReq = `${HOST}/get-req`;
+export const getQueue = `${HOST}/get-queue`;
+export const addToQueue = `${HOST}/add-to-queue`;
+export const removeFromReqList = `${HOST}/remove-req-list`;
+export const removeFromQueue = `${HOST}/remove-from-queue`;
+export const addToHistory = `${HOST}/add-to-history`;
+export const getSpecificHistory = `${HOST}/get-specific-history`
+export const setQueue = `${HOST}/set-queue`;
+export const setReqList = `${HOST}/set-req-list`;
+export const getPlaylists = `${HOST}/get-playlists`;
+export const playlistToQueue = `${HOST}/playlist-to-queue`;
+export const createPlaylist = `${HOST}/create-playlist`;

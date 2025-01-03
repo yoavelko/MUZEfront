@@ -1,0 +1,75 @@
+.dashboard-container {
+    max-height: 90vh;
+}
+
+.dash-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #3a1f2c;
+}
+
+.dash-header {
+    font-size: x-large;
+    color: white;
+}
+
+.dash-body-container {
+    display: flex;
+    direction: rtl;
+}
+
+.dash-body {
+    width: 85%;
+    padding-right: 1.5%;
+    background-color: #333333;
+    height: calc(100vh - 132px);
+    width: calc(100% - 32px);
+    margin: 16px;
+    border-radius: 12px;
+}
+
+.dash-navbar {
+    width: calc(15% - 32px);
+    margin: 16px;
+    height: calc(100vh - 132px);
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.dash-navbar-btn {
+    height: 72px;
+    width: 100%;
+    margin-top: 0;
+    background-color: #1a1a1d;
+    border: 4px solid #333333;
+    color: white;
+    transition: all 0.2s ease;
+    font-size: large;
+}
+
+.dash-navbar-btn:hover {
+    cursor: pointer;
+    color: #8e6378;
+}
+
+.picked-dash-navbar-btn {
+    color: #A64D79;
+    height: 72px;
+    width: 110%;
+    margin-top: 0;
+    background-color: #1a1a1d;
+    border: 4px solid #333333;
+    overflow-x: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: all 0.2s ease;
+    font-size: larger;
+}
+
+.picked-dash-navbar-btn:hover {
+    cursor: pointer;
+}

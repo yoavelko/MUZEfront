@@ -1,0 +1,16 @@
+#muzit-logo {
+    width: 60vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+#client-container {
+    position: relative;
+    margin-bottom: 88px;
+}

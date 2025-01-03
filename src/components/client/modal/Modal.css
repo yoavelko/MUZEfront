@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#modal-container {
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.modal-inner-container {
+    height: 70vh;
+    margin-top: 15vh;
+    background-color: #1A1A1D;
+    direction: rtl;
+}
+
+#modal-img {
+    width: 160px;
+}
+
+.modal-close-btn {
+    margin: 16px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background-color: #A64D79;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-content-container {
+    height: calc(70vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.638);
+    font-weight: 400;
+    max-width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+
+.modal-input-container {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.modal-input-container :nth-child(1) {
+    margin-left: 4px;
+    margin-bottom: 1px;
+}
+
+.modal-title {
+    font-size: x-large;
+    color: #A64D79;
+}
+
+.send-btn {
+    position: relative;
+    top: 16px;
+    background-color: #A64D79;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    width: 96px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.btn-shake {
+    animation: btn-shake 0.4s ease-in-out;
+
+    position: relative;
+    top: 16px;
+    background-color: #A64D79;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    width: 96px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.terms {
+    color: #A64D79;
+}
+
+.terms-detail {
+    font-size: 12px;
+    height: 8px;
+}
+
+
+
+
+@keyframes btn-shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+/*check box*/
+
+
+/* Hide the default checkbox */
+.input-inner-container input {
+    display: none;
+}
+
+.input-inner-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Create a custom checkbox */
+.input-checkmark {
+    position: relative;
+    top: 0.1em;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #2196F300;
+    border-radius: 0.25em;
+    transition: all 0.25s;
+    transform: scale(0.8);
+}
+
+/* When the checkbox is checked, add a blue background */
+.input-inner-container input:checked~.input-checkmark {
+    background-color: #A64D79;
+}
+
+/* Create the input-checkmark/indicator (hidden when not checked) */
+.input-checkmark:after {
+    content: "";
+    position: absolute;
+    transform: rotate(0deg);
+    border: 0.1em solid white;
+    left: 0;
+    top: 0;
+    width: 1.05em;
+    height: 1.05em;
+    border-radius: 0.25em;
+    transition: all 0.25s, border-width 0.1s;
+}
+
+/* Show the input-checkmark when checked */
+.input-inner-container input:checked~.input-checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border-color: #fff0 white white #fff0;
+    border-width: 0 0.15em 0.15em 0;
+    border-radius: 0em;
+    transform: rotate(45deg);
+}

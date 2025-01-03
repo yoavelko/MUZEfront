@@ -1,0 +1,24 @@
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 76px;
+    background-color: #333333;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.header-options{
+    height: 76px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s linear;
+}
+
+.header-options:hover{
+    background-color: white;
+    color: black;
+}
