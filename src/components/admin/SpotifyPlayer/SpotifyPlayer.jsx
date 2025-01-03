@@ -24,7 +24,7 @@ const SpotifyPlayer = ({ queue, loadPlaylist, setLoadPlaylist, popModal, setPopM
     const [isTrackEnding, setIsTrackEnding] = useState(false);
 
     const clientId = import.meta.env.VITE_CLIENT_ID;
-    const redirectUri = import.meta.env.VITE_REDIRECT_URI;
+    const redirectUri = import.meta.env.DEV ? 'http://localhost:5173/admin' : import.meta.env.VITE_REDIRECT_URI;
     const scopes = import.meta.env.VITE_SCOPES;
 
     const authenticateSpotify = () => {
