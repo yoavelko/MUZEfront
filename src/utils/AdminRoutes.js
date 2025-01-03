@@ -1,4 +1,4 @@
-export const HOST = "http://localhost:3001/admin";
+export const HOST = import.meta.env.DEV ? "http://localhost:3001/admin" : 'https://server-muze.onrender.com/admin';
 export const getReq = `${HOST}/get-req`;
 export const getQueue = `${HOST}/get-queue`;
 export const addToQueue = `${HOST}/add-to-queue`;
